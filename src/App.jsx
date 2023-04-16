@@ -14,6 +14,7 @@ export default function App() {
   }, [todos])
 
   function addTodo(e) {
+    e.preventDefault()
     if (!input) return
     setTodos((currentTodos) => {
       return [
